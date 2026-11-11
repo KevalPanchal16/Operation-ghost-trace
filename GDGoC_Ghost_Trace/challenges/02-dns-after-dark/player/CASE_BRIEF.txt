@@ -1,0 +1,29 @@
+OPERATION GHOST TRACE | CASE 02: DNS AFTER DARK
+Classification: Training simulation | Data: Entirely synthetic
+
+INCIDENT
+A fictional lab sensor captured a short burst of DNS traffic after an
+internal endpoint began making unusual lookups. The capture contains normal
+background traffic and a small amount of synthetic suspicious activity.
+
+YOUR OBJECTIVE
+Analyze dns_trace.pcap and recover the flag sent through DNS query names.
+Identify the relevant client and DNS zone, reconstruct the fragments in the
+correct order, and use the evidence in the capture to reverse the encoding.
+
+SUBMISSION
+Submit the recovered flag exactly in the format GDG{...}.
+
+SCOPE & SAFETY
+This is an offline packet-analysis exercise. All packets are synthetic.
+The capture uses documentation-only IPv4 address ranges and the reserved
+.invalid top-level domain. No live host, malware, or real user data exists.
+Do not send packets to any address in the capture.
+
+FILES
+- dns_trace.pcap: synthetic Ethernet / IPv4 / UDP / DNS traffic
+- scope_notes.txt: address and protocol scope
+
+TOOLS
+Wireshark or tshark is recommended. Python 3 can be used for reconstruction.
+No external network access is needed.

@@ -1,0 +1,31 @@
+OPERATION GHOST TRACE | CASE 01: THE PAPER TRAIL
+Classification: Training simulation | Data: Entirely synthetic
+
+INCIDENT
+At 22:40 UTC, the fictional Northstar Archive service recorded an unusual
+authentication sequence. A backup manifest was exported shortly after.
+The incident response team preserved two log files before rotating them.
+
+YOUR OBJECTIVE
+1. Identify the source address associated with the suspicious successful
+   backup-service login in auth.log.
+2. Correlate that source address with requests in web_access.log.
+3. Find the numbered export fragments, put them in numerical order, and
+   reconstruct the exported manifest value.
+4. Decode the reconstructed URL-safe Base64 value to recover the flag.
+
+SUBMISSION
+Submit the recovered flag exactly in the format GDG{...}.
+
+SCOPE & SAFETY
+All names, accounts, events and addresses in this case are fictional.
+The addresses are from documentation-only ranges. No external system is
+involved or should be contacted. This is a local log-analysis exercise.
+
+FILES
+- auth.log: synthetic authentication events
+- web_access.log: synthetic HTTP access events
+
+TOOLS
+Any text editor, grep, a spreadsheet, or Python 3 standard library is
+sufficient. No privileged access or internet connection is required.

@@ -1,0 +1,14 @@
+SCOPE NOTES — DNS AFTER DARK
+
+Sensor: LAB-SENSOR-03 (fictional)
+Capture timezone: UTC
+Client of interest is not specified; determine it from the traffic.
+
+Address ranges used:
+  192.0.2.0/24       TEST-NET-1 (documentation)
+  198.51.100.0/24    TEST-NET-2 (documentation)
+  203.0.113.0/24     TEST-NET-3 (documentation)
+
+Domain names use the reserved .invalid suffix. They are not real services.
+The capture is self-contained. No DNS resolution or external connection
+should be attempted as part of this exercise.
